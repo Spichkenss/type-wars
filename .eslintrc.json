@@ -6,6 +6,8 @@
     "plugin:react/jsx-runtime"
   ],
   "rules": {
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension":
     [
       "error",
@@ -13,7 +15,27 @@
         "extensions": [".tsx"]
       }
     ],
+    "import/prefer-default-export": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "arrow-body-style": "off",
     "quotes": [ "warn", "double" ],
     "indent": [ "warn", 2 ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["./src/**/page.tsx"],
+      "rules": {
+        "import/prefer-default-export": "error"
+      }
+    }
+  ]
 }
