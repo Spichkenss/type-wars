@@ -1,11 +1,20 @@
 {
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "extends": [
     "next/core-web-vitals",
     "airbnb",
     "airbnb/hooks",
-    "plugin:react/jsx-runtime"
+    "plugin:react/jsx-runtime",
+    "plugin:tailwindcss/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "no-shadow": "off",
+    "react/function-component-definition": "off",
     "react/require-default-props": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension":
@@ -34,7 +43,8 @@
     {
       "files": ["./src/**/page.tsx"],
       "rules": {
-        "import/prefer-default-export": "error"
+        "import/prefer-default-export": "error",
+        "react/function-component-definition": "error"
       }
     }
   ]
