@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:react/jsx-runtime"
+  ],
+  "rules": {
+    "react/jsx-filename-extension":
+    [
+      "error",
+      {
+        "extensions": [".tsx"]
+      }
+    ],
+    "quotes": [ "warn", "double" ],
+    "indent": [ "warn", 2 ]
+  }
+}
