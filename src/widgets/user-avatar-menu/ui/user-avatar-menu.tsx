@@ -13,7 +13,6 @@ import { suspened } from "@/shared/lib/hocs/suspened";
 import { UserAvatarMenuSkeleton } from "@/widgets/user-avatar-menu/ui/user-avatar-menu-skeleton";
 
 const UserAvatarMenu = async () => {
-  await new Promise((resolve) => { setTimeout(resolve, 10000); });
   const user = await getCurrentUser();
 
   return (
