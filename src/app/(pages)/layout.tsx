@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { PropsWithChildren } from "react";
-
-import "./globals.css";
-import { Navbar } from "@/widgets/navbar";
-import { PageWrapper } from "@/shared/ui/page-wrapper";
+import { type PropsWithChildren } from "react";
+import "../globals.css";
+import { Providers } from "@/shared/lib/providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +16,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        <PageWrapper>
+        <Providers>
           {children}
-        </PageWrapper>
+        </Providers>
       </body>
     </html>
   );

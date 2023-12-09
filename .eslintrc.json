@@ -35,6 +35,12 @@
         "tsx": "never"
       }
     ],
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "fixStyle": "inline-type-imports"
+      }
+    ],
     "arrow-body-style": "off",
     "quotes": [ "warn", "double" ],
     "indent": [ "warn", 2 ]
