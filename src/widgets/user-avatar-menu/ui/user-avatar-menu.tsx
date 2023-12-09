@@ -9,8 +9,11 @@ import {
   DropdownMenuTrigger,
 } from "@/shared/ui/dropdown-menu";
 import { SignOutButton } from "@/features/auth/sign-out";
+import { suspened } from "@/shared/lib/hocs/suspened";
+import { UserAvatarMenuSkeleton } from "@/widgets/user-avatar-menu/ui/user-avatar-menu-skeleton";
 
-export const UserAvatarMenu = async () => {
+const UserAvatarMenu = async () => {
+  await new Promise((resolve) => { setTimeout(resolve, 3000); });
   const user = await getCurrentUser();
 
   return (
@@ -36,3 +39,5 @@ export const UserAvatarMenu = async () => {
     </DropdownMenu>
   );
 };
+
+export default suspened(UserAvatarMenu, UserAvatarMenuSkeleton);

@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { Pages } from "@/app/config/pages";
 import { SignedIn, SignedOut } from "@/shared/lib/wrappers";
-import { UserAvatarMenu } from "@/widgets/user-avatar-menu";
+
 import { Button } from "@/shared/ui/button";
 import { ThemeSwitcher } from "@/shared/lib/providers/theme";
+import { UserAvatarMenu } from "@/widgets/user-avatar-menu";
 
 export const Navbar = () => {
   return (

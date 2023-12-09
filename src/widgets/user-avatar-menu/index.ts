@@ -1,1 +1,1 @@
-export { UserAvatarMenu } from "./ui/user-avatar-menu";
+export { default as UserAvatarMenu } from "./ui/user-avatar-menu";
