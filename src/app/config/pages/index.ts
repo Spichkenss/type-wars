@@ -1,7 +1,9 @@
 enum Routes {
-  HOME = "Home"
+  Home = "home",
+  SignIn = "signin"
 }
 
 export const Pages: Record<Routes, string> = {
-  [Routes.HOME]: "/",
+  [Routes.Home]: "/",
+  [Routes.SignIn]: "/auth/sign-in",
 };

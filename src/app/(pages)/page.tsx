@@ -1,7 +1,7 @@
 export default async function Home() {
   return (
-    <div>
+    <h6>
       Typewars
-    </div>
+    </h6>
   );
 }

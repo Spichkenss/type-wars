@@ -13,8 +13,16 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "react/prop-types": "off",
     "no-shadow": "off",
+    // codestyle
+    "arrow-body-style": "off",
+    "quotes": [ "warn", "double" ],
+    "indent": [ "warn", 2 ],
+    "semi": ["warn", "always"],
+    // react
+    "react/jsx-pascal-case": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "react/prop-types": "off",
     "react/function-component-definition": "off",
     "react/require-default-props": "off",
     "react/jsx-props-no-spreading": "off",
@@ -25,6 +33,7 @@
         "extensions": [".tsx"]
       }
     ],
+    // import
     "import/prefer-default-export": "off",
     "import/extensions": [
       "error",
@@ -36,15 +45,13 @@
         "tsx": "never"
       }
     ],
+    // typescript
     "@typescript-eslint/consistent-type-imports": [
       "error",
       {
         "fixStyle": "inline-type-imports"
       }
-    ],
-    "arrow-body-style": "off",
-    "quotes": [ "warn", "double" ],
-    "indent": [ "warn", 2 ]
+    ]
   },
   "overrides": [
     {

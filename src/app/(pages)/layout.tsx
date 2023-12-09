@@ -3,7 +3,7 @@ import { type PropsWithChildren } from "react";
 import { Navbar } from "@/widgets/navbar";
 import { Providers } from "@/shared/lib/providers";
 import { PageWrapper } from "@/shared/ui/page-wrapper";
-import { inter } from "../config/style/fonts";
+import { inter } from "@/shared/fonts";
 import "../config/style/globals.css";
 
 export const metadata: Metadata = {
