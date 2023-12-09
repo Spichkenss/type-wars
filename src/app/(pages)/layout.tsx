@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { type Metadata } from "next";
 import { type PropsWithChildren } from "react";
-import "../globals.css";
+import { Navbar } from "@/widgets/navbar";
 import { Providers } from "@/shared/lib/providers";
-
-const inter = Inter({ subsets: ["latin"] });
+import { PageWrapper } from "@/shared/ui/page-wrapper";
+import { inter } from "../config/style/fonts";
+import "../config/style/globals.css";
 
 export const metadata: Metadata = {
   title: "Typewars",
@@ -17,7 +17,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          {children}
+          <Navbar />
+          <PageWrapper>
+            {children}
+          </PageWrapper>
         </Providers>
       </body>
     </html>

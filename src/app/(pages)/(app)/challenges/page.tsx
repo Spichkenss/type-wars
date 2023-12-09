@@ -1,5 +1,5 @@
 export default function ChallengesPage() {
-    return (
-        <div>Challenges</div>
-    );
+  return (
+    <div>Challenges</div>
+  );
 }

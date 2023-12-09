@@ -13,6 +13,7 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "react/prop-types": "off",
     "no-shadow": "off",
     "react/function-component-definition": "off",
     "react/require-default-props": "off",
